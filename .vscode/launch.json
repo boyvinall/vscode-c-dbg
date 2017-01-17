@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gdb",
+            "type": "gdb",
+            "request": "launch",
+            "target": "./hello",
+            "cwd": "${workspaceRoot}",
+            "debugger_args": [
+                "${config.foo.bar}"
+            ],
+            "args": [
+                "foo",
+                "${config.foo.bar}"
+            ]
+        },
+        {
+            "name": "cppdbg",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/hello",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "${config.foo.bar}"
+            ]
+        }
+    ]
+}
